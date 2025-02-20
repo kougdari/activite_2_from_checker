@@ -1,34 +1,42 @@
-<h5><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Inscription D-CLIC</title>
-     <link rel="stylesheet" href="style.css">
-    
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la Formation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <H1>Inscription à la formation D-CLIC</H1>
-     <label for="noms">NOM:</label>
-     <input type="text"id="nom"name="nom"required><br><br>
+    <div class="container">
+        <h1>Formulaire d'inscription à la formation Dev Web du programme D-CLIC.</h1>
+        <form id="inscriptionForm">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" required><br>
 
-     <label for="prenoms">Prénoms</label>
-     <input type=" id=prenoms"name="prenoms"required><br><br>
+            <label for="prenoms">Prénoms :</label><br>
+            <input type="text" id="prenoms" required><br>
 
-     <label for="date_naissance">Date de naissance</label>
-     <input type="date" id="date_naissance"name="date_naissance"required><br><br>
+            <label for="dateNaissance">Date de naissance :</label><br>
+            <input type="date" id="dateNaissance" required><br>
 
-    <label for="telephone">Numéro de téléphone</label>
-     <input type="tel"id="telephone"name="telephone"required><br><br> 
+            <label for="telephone">Numéro de téléphone :</label><br>
+            <input type="tel" id="telephone" required placeholder="Ex: 01XXXXXXXX"><br>
 
-     <label for="motivation">Motivation</label>
-     <textarea name="motivation" id="motivation"required></textarea><br><br>
+            <label for="motivation">Motivation (1000 à 2500 caractères) :</label><br>
+            <textarea id="motivation" required minlength="1000" maxlength="2500"></textarea><br>
 
-     <button type="submit">S'inscrire</button>
-     </form><br><br>
+            <button type="submit">S'inscrire</button>
+        </form>
 
-     <script src="script.js"></script>
-    
+        <div id="resultat" class="hidden">
+            <h2>Informations enregistrées</h2>
+            <p><strong>Nom :</strong> <span id="resNom"></span></p>
+            <p><strong>Prénoms :</strong> <span id="resPrenoms"></span></p>
+            <p><strong>Date de naissance :</strong> <span id="resDateNaissance"></span></p>
+            <p><strong>Numéro de téléphone :</strong> <span id="resTelephone"></span></p>
+            <p><strong>Motivation :</strong> <span id="resMotivation"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html></h5>
+</html>
