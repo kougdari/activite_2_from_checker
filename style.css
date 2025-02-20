@@ -1,0 +1,52 @@
+body{
+    font-family: Arial,sans serif;
+    text-align: center;
+    margin: 20px;
+    background-color:#c0cac3c9;
+
+    form{
+        background:rgb(87, 33, 186);
+        padding: 20px;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        border-radius: 5px;
+    }    
+    
+    input-textarea{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 1px solid #ccc;
+        border-radius: 5px;
+
+    }    
+        
+    button{
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover{
+        background:#0056b3 ;
+    } 
+    hidden{
+        display: none;
+    }
+    #confirmation{
+        background: #d4edda;
+        color: #155724;
+        padding: 20px;
+        width: 50%;
+        margin: 20px auto;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+    }         
+
+
+        
+    
+}
